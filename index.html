@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedTrend | Ecommerce Website </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="container" id="r">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" width="200px"></a>
+            </div>
+            <nav>
+                <div class="logo" id="logo"></div>
+                <div class="access">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" id="prod">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#" id="cart"><img src="images/cart.png" width="30px" height="30px"></a><li>
+                    </ul>
+                    
+                    <!-- <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a> -->
+                </div>      
+            </nav>         
+            <img src="images/menu.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+        <div class="row" id="r1">
+            <div class="col-2">
+                <h1>Reflecting A Finer Aesthetic.<br>Shopping With Style.</h1>
+                <p>Fashion & Clothing is the one makes you look <br>awesome and unique from others!</p>
+                <a href="#" class="btn" id="prod1">Explore now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+$("#prod").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#main").offset().top
+     }, 1500);
+ });
+}); 
+
+
+$(document).ready(function() {
+$("#prod1").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#category").offset().top
+     }, 1500);
+ });
+}); 
+</script>
+
+<!---------------features categories-------------->
+
+<div class="categories" id="category">
+    <div class="small-container">
+       <div class="row">
+           <div class="col-3">
+               <img src="images/category-1.jpg">
+           </div>
+           <div class="col-3">
+              <img src="images/category-2.jpg">
+           </div>
+           <div class="col-3">
+              <img src="images/category-3.jpg">
+           </div>
+          </div>
+    </div>
+</div>  
+
+
+
+<!-- main section -->
+<main id="main" >
+
+<!-- all categories -->
+<section class="categories">
+<div class="small-container">
+        <h2 id="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4 item-container" id="0">
+            <div class="card-item">
+                <img src="images/product-1.jpg" id="card-img">
+                <h4>Puma Printed T-Shirt</h4>
+            </div>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <p id="item-price">Price : $70.00</p>
+        </div>
+
+        <div class="col-4 item-container" id="1">
+            <div class="card-item">
+                <img src="images/product-2.jpg" id="card-img">
+                <h4 id="item-name">HRX Shoes</h4>
+            </div>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <p id="item-price">Price : $60.00</p>
+        </div>
+
+        <div class="col-4 item-container" id="2">
+            <div class="card-item">
+                <img src="images/product-3.jpg" id="card-img">
+                <h4>Grey Joggers</h4>
+            </div>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-o"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <p id="item-price">Price : $50.00</p>
+        </div>
+
+        <div class="col-4 item-container" id="3">
+            <div class="card-item">
+                <img src="images/product-4.jpg" id="card-img">
+                <h4>Puma Navy-Blue</h4>
+            </div>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <p id="item-price">Price : $90.00</p>
+        </div>
+    
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4 item-container" id="4">
+            <div class="card-item">
+                <img src="images/product-5.jpg" id="card-img">
+                <h4>Grey Sneakers</h4>
+            </div>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o"></i>
+                   <i class="fa fa-star-o"></i>
+                </div>
+                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $50.00</p>
+            </div>
+            <div class="col-4 item-container" id="5">
+            <div class="card-item">
+               <img src="images/product-6.jpg" id="card-img">
+               <h4>Puma Black</h4>
+            </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $80.00</p>
+           </div>
+           <div class="col-4 item-container" id="6">
+            <div class="card-item"> 
+               <img src="images/product-7.jpg" id="card-img">
+               <h4>HRX Socks</h4>
+            </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $65.00</p>
+           </div>
+           <div class="col-4 item-container" id="7">
+            <div class="card-item">
+               <img src="images/product-8.jpg" id="card-img">
+               <h4>Fossil Watch</h4>
+            </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $75.00</p>
+           </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 item-container" id="8">
+            <div class="card-item">
+                <img src="images/product-9.jpg" id="card-img">
+                <h4>Roadster</h4>
+            </div>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-half-o"></i>
+                   <i class="fa fa-star-o"></i>
+                </div>
+                <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $55.00</p>
+            </div>
+            <div class="col-4 item-container" id="9" >
+                <div class="card-item">    
+               <img src="images/product-10.jpg" id="card-img">
+               <h4>HRX Red Shoes</h4>
+               </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $85.00</p>
+           </div>
+           <div class="col-4 item-container" id="10" >
+            <div class="card-item">
+               <img src="images/product-11.jpg"  id="card-img">
+               <h4>Grey Shoes</h4>
+            </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $90.00</p>
+           </div>
+           <div class="col-4 item-container" id="11">
+            <div class="card-item">
+               <img src="images/product-12.jpg"  id="card-img">
+               <h4>Black Joggers</h4>
+            </div>
+               <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                <p id="item-price">Price : $75.00</p>
+           </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="categories">
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+    
+</section>
+
+<section class="categories">
+    <section class="categories">
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+
+        <div class="card-item" id="card-img item-name"></div>
+    
+</section>
+
+
+<!-------------brands----------------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+             <img src="images/logo-oppo.png">
+         </div>
+         <div class="col-5">
+             <img src="images/logo-coca-cola.png">
+         </div>
+         <div class="col-5">
+             <img src="images/logo-paypal.png">
+         </div>
+         <div class="col-5">
+             <img src="images/logo-philips.png">
+         </div>
+        </div>
+    </div>
+</div>
+
+<!-------------footer----------------->
+
+<div class="footer" id="f">
+   <div class="coontainer">
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download App For Android and ios Mobile.</p>
+               <div class="app-logo">
+                   <img src="images/play-store.png">
+                   <img src="images/app-store.png">
+               </div>
+             </div>
+           <div class="footer-col-2">
+            <img src="images/logo2.png">
+             <p>Our Purpose IS To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many.</p>
+         </div>
+         <div class="footer-col-3">
+             <h3>Useful Links</h3>
+             <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affliate</li>
+             </ul>
+         </div>
+         <div class="footer-col-4">
+             <h3>Follow US</h3>
+             <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>Youtube</li>
+             </ul>
+         </div>
+       </div>
+       <hr>
+
+       <p class="copyright">Copyright 2021 -RedTrends</p>
+   </div>
+</div>
+
+<!-------js------->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight="0px";
+
+    function menutoggle(){
+    if(MenuItems.style.maxHeight=="0px")
+    {
+    MenuItems.style.maxHeight="200px";
+    }
+    else
+    {
+    MenuItems.style.maxHeight="0px";
+    }
+    }
+</script>
+<!-- end of footer section -->
+</main>
+<!-- end of main -->
+
+
+
+
+
+
+
+
+<!-- details page section -->
+<div id="details-page">
+    <div class="details">
+        <div class="items-detail">
+
+            <div class="details-card" class="col-2">
+                <p id="detail-title">Home / T-Shirt</p>
+                <!-- <h1>Puma Printed T-Shirt</h1> -->
+                <h4 id="detail-price">$70.00</h4>
+                <p id="you-save">You save : (Rs 4,000)</p>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+                <h3>Product Details <i class="fa fa fa-indent"></i> : </h3>
+                <p id="spec"></p>
+                <button id="carts" class="btn">Add to Cart</button>
+                <button id="buy" class="btn">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- end of page detail -->
+
+
+
+<!-- cart list section -->
+<div id="cart-container">
+    <div id="empty-cart">
+        <h1>Your Cart is Empty...</h1>
+        <img src="images/empty-cart.png">
+    </div>
+
+    <div id="cart-with-items">
+        <p id="cart-title">Your <strong>Cart</strong></p>
+        <div class="cart-column" style="background-color: #ff9933">
+            <h3>Product</h3>
+            <h3>Product Name</h3>
+            <h3>Total </h3>
+            <h3>Quantity</h3>
+            <h3>Remove</h3>
+        </div>
+        <div id="item-body">
+        </div>
+        <div id="total">
+            <h3 id="total-items"></h3>
+            <h3 id="total-amount"></h3>
+            <h3 id="you-saved"></h3>
+        </div>
+        <div class="btn2">
+            <a href="checkout.html">Checkout</a> 
+        </div>
+    </div>
+</div>
+<script src="/app.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

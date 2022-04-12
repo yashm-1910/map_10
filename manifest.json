@@ -1,0 +1,26 @@
+{
+    "name": "Red Trend [Yash Mahajan]",
+    "short_name": "RedTrend",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color" : "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/icons/buy-2.png",
+            "type":"image/png",
+            "sizes": "144x144",
+             "purpose": "any"
+        },
+        {
+            "src": "/images/icons/buy.png",
+            "type":"image/png",
+            "sizes": "192x192",
+             "purpose": "maskable"
+        }
+    ]
+
+
+}
+
